@@ -1,0 +1,63 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <header>
+            <img class="banner-img" style="width: 100%; height: 250px;" src="images/banner">
+            <div class="banner-main-text">Jimmy's Diner</div>
+            <div class="banner-sub-text">The best burgers and pizzas in town</div>
+        </header>
+        <div class="menu-list" id="menu-list">
+
+        </div>
+
+        <div class="cart-section" id="cart-section">
+            <p>Your Order</p>
+            <ul id="order-items">
+
+            </ul>
+            <div id="partition-line"></div>
+            <p id="total-price">Total Price: </p>
+            <button id="complete-order">Complete Order</button>
+
+        </div>
+        <div class="payment-gateway no-display" id="payment-gateway">
+            <p>Enter Card Details</p>
+            <form id="payment-form">
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    id="name"
+                    name="name"
+                    aria-label="name"
+                    required
+                />
+
+                <input
+                    type="number"
+                    placeholder="Enter card number"
+                    aria-label="cardNumber"
+                    required
+                />
+
+                <input
+                    type="number"
+                    placeholder="Enter cvv"
+                    aria-label="cvv"
+                    required
+                />
+                <!-- <button id="pay" type="submit" >Pay</button> -->
+                <input id="submit-btn" type="submit">
+            </form>
+
+        </div>
+        
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
